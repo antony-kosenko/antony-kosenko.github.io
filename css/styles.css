@@ -1,0 +1,302 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    top:0;
+    margin: 0;
+    padding: 0;
+    width: 98%; 
+    height: 100%;
+    font-family:'Encode Sans SC', sans-serif;
+    background-color: black;
+    color: white;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    outline: 1px solid silver;
+  }
+
+p {
+    font-size: 15px;
+}
+
+span {
+    background-color: white;
+    color: black;
+}
+
+/* HEADER STYLE */
+body .hello-block {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+
+header .top-nav {
+    padding: 0 40px;
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    background-color: white;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
+    box-sizing: border-box;
+    row-gap: 30px;
+    text-align: center;
+    z-index: 99;
+
+}
+
+.top-nav a:focus  {
+    outline: 1px solid black;
+}
+
+
+
+header .top-nav a {
+    
+    text-decoration: none;
+    color: black;
+    width: 90px;
+    line-height: 40px;
+    height: 40px;
+}
+
+header .top-nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* MAIN SECTION */
+
+/* ABOUT */
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+body .hello-block section {
+    padding: 15% 20% 15% 20%;
+}
+
+body .hello-block section h1 {
+    font-family:'Encode Sans SC', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+body .hello-block section:not(h1) {
+    font-family:'Encode Sans SC', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+main .about-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100vh;
+    max-width: 100%;
+    column-gap: 60px;
+    align-items: center;
+}
+
+main .about-block section {
+    padding: 10% 10% 10% 10%;
+    width: 60%;
+}
+
+main .about-block h2:first-of-type {
+    margin-top: 0;
+  }
+
+main .about-block figure {
+    margin: 0;
+}
+
+main .author-figure img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* SKILLS */
+.skills-page {
+    position: relative;
+    padding: 5% 10% 5% 10%;
+    width: 80%;
+    min-height: fit-content;
+    box-sizing: content-box;
+}
+
+.skills-page .skills-block {
+    margin-bottom: 10% ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
+.skills-page h3 {
+    padding-left: 30px;
+}
+
+.skills-page h3:nth-of-type(2) {
+ text-align: right;
+ padding-right: 30px;
+}
+
+.skills-page .skills-block:nth-of-type(2) {
+    justify-content: end;
+}
+
+
+.skills-page section {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    column-gap: 15px;
+    padding: 10px 25px;
+}
+
+
+.skills-page .skills-block svg {
+    fill: white;
+}
+
+/* CONTACTS */
+
+main .contacts-block {
+    padding: 0 10%;
+    width: 80%;
+    min-height: 90vh;
+    position: relative;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .contacts-labels {
+    padding-top: 2rem;
+    display: flex;
+    align-items: start;
+    max-width: 100%;
+    gap: 10%;
+    justify-content: space-evenly;
+}
+
+main .contacts-labels div {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    min-width: 70px;
+    min-height: 80px;
+    row-gap: 20px;
+    font-size: 90%;
+}
+
+main .contacts-labels a {
+    text-decoration: none;
+    color: white;
+}
+
+main .contacts-labels div:hover {
+    
+    background-color: white;
+    color: black;
+}
+
+
+
+main .contacts-text {
+    display: block;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    width: calc(100% - 20px);
+    height: 8vh;
+    color: black;
+    font-size: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color:grey;
+}
+
+footer p {
+    font-size: 10px;
+}
+@media screen and (max-width: 700px) {
+
+    .about-block .standart-img {
+        display: none;
+    }
+
+    body .hello-block section {
+        padding: 25% 20% 15% 20%;
+    }
+
+    main .about-block {
+        box-sizing: content-box;
+        flex-direction: column;
+        text-align: justify;
+        height: fit-content;
+    }
+
+    main .about-block section {
+        width: 83%;
+    }
+
+    main .about-block figure {
+        position: relative;
+    }
+
+    main .about-block figure img {
+        height: 70%;
+        object-fit: contain;
+    }
+
+    main .contacts-labels {
+        max-width: 100%;
+        column-gap: 0px;
+    }
+
+    main .contacts-labels a {
+        outline: 1px solid black;
+    }
+
+}
+@media screen and (min-width: 700px) {
+
+    main .about-block .media-img {
+        display: none;
+    }
+}
